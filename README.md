@@ -1,16 +1,22 @@
-# React + Vite
+# Kareem Ayman Ghabayen — Personal Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal full-stack portfolio website. This project is built using a modern, high-performance, and **Data-Driven Architecture** that decouples content from the presentation layer.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack & Architecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Frontend Core:** React (Vite)
+- **Styling & UI/UX:** Custom CSS Tokens (Premium Dark Minimalist Theme with glassmorphism and scroll-reveal effects)
+- **Content Management:** Decoupled Architecture utilizing a zero-dependency custom Markdown (`.md`) parser to dynamically fetch and inject resume/project data seamlessly.
 
-## React Compiler
+## 📂 Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `public/data/` — Contains all content files (`about.md`, `education.md`, and project case studies).
+- `src/utils/mdParser.js` — Core lightweight parser separating YAML front-matter from the Markdown body.
+- `src/hooks/useMarkdown.js` — Custom React hooks handling dynamic data fetching.
+- `src/App.jsx` — The core UI hub styled with precise UX/UI principles.
 
-## Expanding the ESLint configuration
+## 🚀 How to Run Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the local server: `npm run dev`
